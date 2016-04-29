@@ -1,0 +1,86 @@
+<http://openpermissions.org/ns/id/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/id/b197b469dafc46848f1e1cb50c53f68b> <http://purl.org/dc/terms/description> "Sunset over a Caribbean beach" .
+_:Id1_775b444fcec74fac8f1edea4d6ebbb83a720c679_N201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Id> .
+<http://openpermissions.org/ns/id/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/id/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/id/b197b469dafc46848f1e1cb50c53f68b> <http://purl.org/dc/terms/modified> "2016-03-10T11:53:29.048000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://openpermissions.org/ns/id/13> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/b197b469dafc46848f1e1cb50c53f68b> .
+<http://openpermissions.org/ns/hub/testcopictureid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/IdType> .
+<http://openpermissions.org/ns/id/14> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/b197b469dafc46848f1e1cb50c53f68b> .
+_:Id1_775b444fcec74fac8f1edea4d6ebbb83a720c679_N201 <http://openpermissions.org/ns/op/1.1/value> "100123" .
+<http://openpermissions.org/ns/id/b197b469dafc46848f1e1cb50c53f68b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Asset> .
+<http://openpermissions.org/ns/id/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/id/11> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/b197b469dafc46848f1e1cb50c53f68b> .
+<http://openpermissions.org/ns/id/b197b469dafc46848f1e1cb50c53f68b> <http://openpermissions.org/ns/op/1.1/alsoIdentifiedBy> _:Id1_775b444fcec74fac8f1edea4d6ebbb83a720c679_N201 .
+_:Id1_775b444fcec74fac8f1edea4d6ebbb83a720c679_N201 <http://openpermissions.org/ns/op/1.1/id_type> <http://openpermissions.org/ns/hub/testcopictureid> .
+<http://openpermissions.org/ns/id/12> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/b197b469dafc46848f1e1cb50c53f68b> .
+
+<http://openpermissions.org/ns/id/a2719dc7f1ef42cc966e48609e50acb0> <http://openpermissions.org/ns/op/1.1/alsoIdentifiedBy> _:Id1_56a50a895668fa2cf21efbede06f93b3a8826b2d_N202 .
+_:Id1_56a50a895668fa2cf21efbede06f93b3a8826b2d_N202 <http://openpermissions.org/ns/op/1.1/id_type> <http://openpermissions.org/ns/hub/testcopictureid> .
+<http://openpermissions.org/ns/id/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/id/a2719dc7f1ef42cc966e48609e50acb0> <http://openpermissions.org/ns/op/1.1/alsoIdentifiedBy> _:Id1_a835608b18204c6f1de3ef119a18e01b333f713a_N203 .
+_:Id1_a835608b18204c6f1de3ef119a18e01b333f713a_N203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Id> .
+<http://openpermissions.org/ns/id/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+_:Id1_56a50a895668fa2cf21efbede06f93b3a8826b2d_N202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Id> .
+_:Id1_a835608b18204c6f1de3ef119a18e01b333f713a_N203 <http://openpermissions.org/ns/op/1.1/id_type> <http://openpermissions.org/ns/hub/examplecopictureid> .
+<http://openpermissions.org/ns/id/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/hub/examplecopictureid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/IdType> .
+<http://openpermissions.org/ns/id/12> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/a2719dc7f1ef42cc966e48609e50acb0> .
+<http://openpermissions.org/ns/id/a2719dc7f1ef42cc966e48609e50acb0> <http://purl.org/dc/terms/modified> "2016-03-10T11:53:29.049000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://openpermissions.org/ns/hub/testcopictureid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/IdType> .
+_:Id1_a835608b18204c6f1de3ef119a18e01b333f713a_N203 <http://openpermissions.org/ns/op/1.1/value> "999002" .
+<http://openpermissions.org/ns/id/a2719dc7f1ef42cc966e48609e50acb0> <http://purl.org/dc/terms/description> "Polar bear on an ice floe" .
+<http://openpermissions.org/ns/id/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/id/14> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/a2719dc7f1ef42cc966e48609e50acb0> .
+<http://openpermissions.org/ns/id/13> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/a2719dc7f1ef42cc966e48609e50acb0> .
+<http://openpermissions.org/ns/id/11> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/a2719dc7f1ef42cc966e48609e50acb0> .
+_:Id1_56a50a895668fa2cf21efbede06f93b3a8826b2d_N202 <http://openpermissions.org/ns/op/1.1/value> "100456" .
+<http://openpermissions.org/ns/id/a2719dc7f1ef42cc966e48609e50acb0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Asset> .
+
+_:Id1_4ec45d5d89bc69c9bd6e8e8a19cbbc98eb242a15_N204 <http://openpermissions.org/ns/op/1.1/value> "200123" .
+_:Id1_4ec45d5d89bc69c9bd6e8e8a19cbbc98eb242a15_N204 <http://openpermissions.org/ns/op/1.1/id_type> <http://openpermissions.org/ns/hub/testcopictureid> .
+<http://openpermissions.org/ns/id/3> <http://openpermissions.org/ns/op/1.1/hasElement> <http://openpermissions.org/ns/id/bfa853aea878469085ee51b4a9cfccdc> .
+<http://openpermissions.org/ns/id/4> <http://openpermissions.org/ns/op/1.1/hasElement> <http://openpermissions.org/ns/id/bfa853aea878469085ee51b4a9cfccdc> .
+<http://openpermissions.org/ns/id/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/AssetSet> .
+<http://openpermissions.org/ns/id/1> <http://openpermissions.org/ns/op/1.1/hasElement> <http://openpermissions.org/ns/id/bfa853aea878469085ee51b4a9cfccdc> .
+<http://openpermissions.org/ns/id/bfa853aea878469085ee51b4a9cfccdc> <http://purl.org/dc/terms/modified> "2016-03-10T11:53:29.049000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://openpermissions.org/ns/hub/testcopictureid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/IdType> .
+<http://openpermissions.org/ns/id/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/AssetSet> .
+<http://openpermissions.org/ns/id/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/AssetSet> .
+<http://openpermissions.org/ns/id/bfa853aea878469085ee51b4a9cfccdc> <http://purl.org/dc/terms/description> "Sunset over a Caribbean beach" .
+_:Id1_4ec45d5d89bc69c9bd6e8e8a19cbbc98eb242a15_N204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Id> .
+<http://openpermissions.org/ns/id/bfa853aea878469085ee51b4a9cfccdc> <http://openpermissions.org/ns/op/1.1/alsoIdentifiedBy> _:Id1_4ec45d5d89bc69c9bd6e8e8a19cbbc98eb242a15_N204 .
+<http://openpermissions.org/ns/id/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/AssetSet> .
+<http://openpermissions.org/ns/id/2> <http://openpermissions.org/ns/op/1.1/hasElement> <http://openpermissions.org/ns/id/bfa853aea878469085ee51b4a9cfccdc> .
+<http://openpermissions.org/ns/id/bfa853aea878469085ee51b4a9cfccdc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Asset> .
+
+<http://openpermissions.org/ns/id/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/id/14> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> .
+<http://openpermissions.org/ns/id/1> <http://openpermissions.org/ns/op/1.1/hasElement> <http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> .
+<http://openpermissions.org/ns/id/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/id/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/hub/examplecopictureid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/IdType> .
+_:Id1_a3ea117cf85ed5028ecdcf74ac1f4e897585ffd3_N205 <http://openpermissions.org/ns/op/1.1/value> "200456" .
+_:Id1_a59fed47b4509ebb27765c4c564338a6b42361c0_N206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Id> .
+<http://openpermissions.org/ns/id/11> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> .
+<http://openpermissions.org/ns/id/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/AssetSet> .
+<http://openpermissions.org/ns/hub/testcopictureid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/IdType> .
+_:Id1_a3ea117cf85ed5028ecdcf74ac1f4e897585ffd3_N205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Id> .
+<http://openpermissions.org/ns/id/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/AssetSet> .
+_:Id1_a3ea117cf85ed5028ecdcf74ac1f4e897585ffd3_N205 <http://openpermissions.org/ns/op/1.1/id_type> <http://openpermissions.org/ns/hub/testcopictureid> .
+<http://openpermissions.org/ns/id/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/AssetSet> .
+<http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> <http://openpermissions.org/ns/op/1.1/alsoIdentifiedBy> _:Id1_a59fed47b4509ebb27765c4c564338a6b42361c0_N206 .
+<http://openpermissions.org/ns/id/3> <http://openpermissions.org/ns/op/1.1/hasElement> <http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> .
+<http://openpermissions.org/ns/id/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Policy> .
+<http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> <http://purl.org/dc/terms/description> "Polar bear on an ice floe" .
+_:Id1_a59fed47b4509ebb27765c4c564338a6b42361c0_N206 <http://openpermissions.org/ns/op/1.1/id_type> <http://openpermissions.org/ns/hub/examplecopictureid> .
+<http://openpermissions.org/ns/id/4> <http://openpermissions.org/ns/op/1.1/hasElement> <http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> .
+<http://openpermissions.org/ns/id/2> <http://openpermissions.org/ns/op/1.1/hasElement> <http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> .
+<http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Asset> .
+<http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> <http://openpermissions.org/ns/op/1.1/alsoIdentifiedBy> _:Id1_a3ea117cf85ed5028ecdcf74ac1f4e897585ffd3_N205 .
+_:Id1_a59fed47b4509ebb27765c4c564338a6b42361c0_N206 <http://openpermissions.org/ns/op/1.1/value> "998002" .
+<http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> <http://purl.org/dc/terms/modified> "2016-03-10T11:53:29.049000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://openpermissions.org/ns/id/13> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> .
+<http://openpermissions.org/ns/id/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/AssetSet> .
+<http://openpermissions.org/ns/id/12> <http://openpermissions.org/ns/op/1.1/defaultTarget> <http://openpermissions.org/ns/id/5417cd184450490584fd7236dae9a17a> .
+
