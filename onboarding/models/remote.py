@@ -144,8 +144,14 @@ def exchange_delegate_token(token, repository_id):
             ca_certs=options.ssl_ca_cert
         )
     except httpclient.HTTPError as exc:
-        if exc.code == 403:
-            raise exceptions.HTTPError(403, exc.message)
+        if exc.code in (403, 400):
+            try:
+                body = json.loads(exc.response.body)
+                errors = [x['message'] for x in body['errors']]
+            except (AttributeError, KeyError):
+                errors = exc.message
+
+            raise exceptions.HTTPError(403, errors, source='authentication')
         else:
             msg = 'Error authorizing access to the repository'
             logging.exception(msg)
