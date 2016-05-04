@@ -27,7 +27,7 @@ SAMPLE_DATA = {
 @patch('onboarding.models.assets.options')
 def test_generate_idmap(options):
     options.hub_id = 'hub1'
-    options.default_resolver_id = 'copyrighthub.org'
+    options.default_resolver_id = 'openpermissions.org'
     repository_id = '2e9ce79cfa710e80878920c98e076aa9'
 
     new_id_map = generate_idmap(SAMPLE_DATA, repository_id)
