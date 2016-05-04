@@ -19,6 +19,7 @@ from tornado.gen import coroutine, Return
 from tornado.concurrent import Future
 from chub import API, oauth2
 from koi import exceptions
+from koi.configure import ssl_server_options
 
 
 def raise_client_http_error(error):
@@ -68,7 +69,7 @@ def transform(data, content_type, r2rml_url):
             options.service_id,
             options.client_secret,
             scope=oauth2.Write(options.url_transformation),
-            ca_certs=options.ssl_ca_cert
+            ssl_options=ssl_server_options()
         )
     except httpclient.HTTPError as exc:
         logging.exception('Error getting token for the transformation service')
@@ -78,7 +79,7 @@ def transform(data, content_type, r2rml_url):
 
     client = API(options.url_transformation,
                  token=token,
-                 ca_certs=options.ssl_ca_cert)
+                 ssl_options=ssl_server_options())
 
     if r2rml_url:
         params = urlencode({'r2rml_url': r2rml_url})
@@ -113,7 +114,7 @@ def get_repository(repository_id):
     :return: url of the repository url
     :raise: HTTPError
     """
-    client = API(options.url_accounts, ca_certs=options.ssl_ca_cert)
+    client = API(options.url_accounts, ssl_options=ssl_server_options())
     try:
         response = yield client.accounts.repositories[repository_id].get()
         logging.debug(response['data'])
@@ -141,7 +142,7 @@ def exchange_delegate_token(token, repository_id):
             options.client_secret,
             scope=oauth2.Write(repository_id),
             jwt=token,
-            ca_certs=options.ssl_ca_cert
+            ssl_options=ssl_server_options()
         )
     except httpclient.HTTPError as exc:
         if exc.code in (403, 400):
@@ -178,7 +179,7 @@ def store(response_trans, repository_url, repository_id, token=None):
         'Accept': 'application/json'
     }
 
-    client = API(repository_url, ca_certs=options.ssl_ca_cert, token=token)
+    client = API(repository_url, ssl_options=ssl_server_options(), token=token)
     endpoint = client.repository.repositories[repository_id].assets
 
     try:

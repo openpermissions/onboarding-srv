@@ -3,5 +3,5 @@ futures==2.2.0
 requests==2.4.3
 tornado==4.3
 git+https://github.com/openpermissions/chub.git@1.0.4
-git+https://github.com/openpermissions/koi.git@1.0.6
+git+https://github.com/openpermissions/koi.git@ssl_options
 git+https://github.com/openpermissions/bass.git@1.0.3

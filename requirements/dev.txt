@@ -20,7 +20,7 @@ futures==2.2.0
 grip==3.2.0
 itsdangerous==0.24
 Jinja2==2.8
-git+https://github.com/openpermissions/koi.git@1.0.6
+git+https://github.com/openpermissions/koi.git@ssl_options
 lazy-object-proxy==1.2.2
 logilab-common==1.2.0
 Markdown==2.6.6
