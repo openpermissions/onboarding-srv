@@ -2,7 +2,7 @@ FORMAT: 1A
 HOST: https://on-stage.copyrighthub.org
 
 # Open Permissions Platform Onboarding Service
-The Onboarding Service is a simple service used to onboard data to the Hub.
+The Onboarding Service is a simple service used to upload data to a repository within the Hub.
 
 ## Standard error output
 On endpoint failure there is a standard way to report errors.
@@ -23,9 +23,9 @@ The output should be of the form
 
 # Authorization
 
-This API requires authentication. Where [TOKEN] is indicated in an endpoint header you should supply an OAuth 2.0 access token with the appropriate scope (read, write or delegate). 
+This API requires authentication. Where [TOKEN] is indicated in an endpoint header you should supply an OAuth 2.0 access token with the appropriate scope (read, write or delegate).
 
-See [How to Auth](https://github.com/openpermissions/auth-srv/blob/master/documents/markdown/how-to-auth.md) 
+See [How to Auth](https://github.com/openpermissions/auth-srv/blob/master/documents/markdown/how-to-auth.md)
 for details of how to authenticate Hub services.
 
 # Group Service information
