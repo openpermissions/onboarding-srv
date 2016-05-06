@@ -101,7 +101,7 @@ Hub Keys are entity IDs embedded into a URL to create unique browsable
 URLs. Hub Keys are true URLs that encode enough information to
 uniquely identify and locate their referent.
 
-The following is an example of a Hub Key that identifies an asset and
+The following is an example of a Hub Key that identifies an asset,
 the hub and repository to which it was onboarded:
 
 `https://openpermissions.org/s1/hub1/dcbfd5956ccde508f7a942eb7e03bd13/asset/c46421146c5a4aa68877afe37a75835c`
