@@ -64,7 +64,7 @@ Information on the service
                     "service_name": "Open Permissions Platform Onboarding Service",
                     "version": "0.1.0",
                     "service_id": "d6e29563e22311e5b45cacbc32a8c615",
-                    "default_resolver_id": "copyrighthub.org",
+                    "default_resolver_id": "openpermissions.org",
                     "hub_id": "hub1"
                 }
             }
@@ -197,7 +197,7 @@ Errors will only be returned in response if errors were raised during onboarding
                 "data": [
                     {
                         "entity_id": "5d84d36d6eec446aae9c4435291eca8a",
-                        "hub_key": "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/5d84d36d6eec446aae9c4435291eca8a",
+                        "hub_key": "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/5d84d36d6eec446aae9c4435291eca8a",
                         "entity_type": "asset",
                         "source_ids": [
                             {
@@ -208,7 +208,7 @@ Errors will only be returned in response if errors were raised during onboarding
                     },
                     {
                         "entity_id": "749ac740da53480d81f8568240e93fb2",
-                        "hub_key": "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/749ac740da53480d81f8568240e93fb2",
+                        "hub_key": "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/749ac740da53480d81f8568240e93fb2",
                         "entity_type": "asset",
                         "source_ids": [
                             {
@@ -277,7 +277,7 @@ Errors will only be returned in response if errors were raised during onboarding
                 "data": [
                     {
                         "entity_id": "5d84d36d6eec446aae9c4435291eca8a",
-                        "hub_key": "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/5d84d36d6eec446aae9c4435291eca8a",
+                        "hub_key": "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/5d84d36d6eec446aae9c4435291eca8a",
                         "entity_type": "asset",
                         "source_ids": [
                             {
@@ -288,7 +288,7 @@ Errors will only be returned in response if errors were raised during onboarding
                     },
                     {
                         "entity_id": "749ac740da53480d81f8568240e93fb2",
-                        "hub_key": "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/749ac740da53480d81f8568240e93fb2",
+                        "hub_key": "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/749ac740da53480d81f8568240e93fb2",
                         "entity_type": "asset",
                         "source_ids": [
                             {
