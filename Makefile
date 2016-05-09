@@ -153,12 +153,6 @@ egg_locks:
 			pip freeze >> $$req_file ; \
 			deactivate ; \
 			rm -rf $$venv_path ; \
-			sed -i '' -e 's|chub==\(.*\)|git+https://github.com/openpermissions/chub.git@\1|g' $$req_file ; \
-			sed -i '' -e 's|koi==\(.*\)|git+https://github.com/openpermissions/koi.git@\1|g' $$req_file ; \
-			sed -i '' -e 's|bass==\(.*\)|git+https://github.com/openpermissions/bass.git@\1|g' $$req_file ; \
-			sed -i '' -e 's|perch==\(.*\)|git+https://github.com/openpermissions/perch.git@\1|g' $$req_file ; \
-			sed -i '' -e 's|cloverpy==\(.*\)|git+https://github.com/catapultbamboo/cloverpy.git@\1|g' $$req_file ; \
-			sed -i '' -e 's|file-translate==\(.*\)|git+https://github.com/catapultbamboo/file_translate.git@\1|g' $$req_file ; \
 		fi; \
 	done
 
