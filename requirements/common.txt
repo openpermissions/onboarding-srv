@@ -3,5 +3,5 @@ futures==2.2.0
 requests==2.4.3
 tornado==4.3
 opp-chub==1.0.5
-opp-koi==1.0.8
+opp-koi==1.0.9
 opp-bass==1.0.9
