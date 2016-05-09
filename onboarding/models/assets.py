@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
 # Copyright 2016 Open Permissions Platform Coalition
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License. You may obtain a copy of the License at
-# http://www.apache.org/licenses/LICENSE-2.0
-# Unless required by applicable law or agreed to in writing, software distributed under the License is
-# distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and limitations under the License.
+
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at http://www.apache.org/licenses/LICENSE-2.0
+
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
 import logging
 import re
@@ -44,45 +49,6 @@ def onboard(data, content_type, repository_url, repository_id, token=None, r2rml
         assets = response_trans['data']['id_map']
     logging.debug('<<< onboard')
     raise Return((assets, http_status, errors))
-
-
-def verify(request):
-    """
-    Verify the request
-    :param request: http request
-    :returns: list of error dictionary
-    """
-    verify_results = (
-        func(request) for func in
-        [verify_content_type, verify_post_body_size])
-    errors = [{'message': message}
-              for message in verify_results if message]
-    return errors
-
-
-def verify_content_type(request):
-    """
-    Verify if the type of the source data is supported
-    :param request: http request
-    :returns: error message if there is any
-    """
-    supported_types = ['text/csv', 'application/json']
-    content_type = request.headers.get('Content-Type', '')
-    if content_type.split(';')[0] not in supported_types:
-        return 'Unsupported content type "{}"'.format(content_type)
-
-
-def verify_post_body_size(request):
-    """
-    Determines that the size of the body is within the limit of the system
-    :param request: http request
-    :returns: error message if there is any
-    """
-    content_length = long(request.headers.get('Content-Length', 0))
-    logging.debug("Request size:{}".format(content_length))
-    if content_length > options.max_post_body_size:
-        return 'Content length:{} is too large. Max allowed is:{}'.format(
-            content_length, options.max_post_body_size)
 
 
 RE_ENTITY_ID="<http://openpermissions.org/ns/id/([^>]*)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://openpermissions.org/ns/op/1.1/Asset>"

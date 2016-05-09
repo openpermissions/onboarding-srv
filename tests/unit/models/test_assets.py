@@ -8,19 +8,14 @@
 # See the License for the specific language governing permissions and limitations under the License.
 
 import os
-import json
-from operator import itemgetter
 
-from mock import Mock, patch
-import pytest
+from mock import patch
 
-from onboarding.models.assets import (
-    verify_content_type,  generate_idmap)
+from onboarding.models.assets import generate_idmap
 
 
 with open(os.path.join(os.path.dirname(__file__), '../fixture/transform.ttl'), 'r') as myfile:
     TRIPLES = myfile.read()
-
 
 SAMPLE_DATA = {
     'data': {
@@ -29,26 +24,10 @@ SAMPLE_DATA = {
 }
 
 
-
-
-def test_verify_type_csv():
-    request = Mock()
-    request.headers = {'Content-Type': 'text/csv; charset=utf-8'}
-    verify_content_type(request) is None
-
-
-def test_get_type_unsupported():
-    request = Mock()
-    request.headers = {'Content-Type': 'unsupported'}
-    error = verify_content_type(request)
-    assert error == 'Unsupported content type "unsupported"'
-
-
-
 @patch('onboarding.models.assets.options')
 def test_generate_idmap(options):
     options.hub_id = 'hub1'
-    options.default_resolver_id = 'copyrighthub.org'
+    options.default_resolver_id = 'openpermissions.org'
     repository_id = '2e9ce79cfa710e80878920c98e076aa9'
 
     new_id_map = generate_idmap(SAMPLE_DATA, repository_id)

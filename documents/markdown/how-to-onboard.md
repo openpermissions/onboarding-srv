@@ -28,7 +28,7 @@ This How-to describes how to onboard assets using the Open Permissions Platform
 Onboarding Service.
 
 For issues and support, contact
-[support-copyrighthub@digicatapult.org.uk](mailto:support-copyrighthub@digicatapult.org.uk)
+[support@openpermissions.org](mailto:support@openpermissions.org)
 by email.
 
 ### See also
@@ -101,10 +101,10 @@ Hub Keys are entity IDs embedded into a URL to create unique browsable
 URLs. Hub Keys are true URLs that encode enough information to
 uniquely identify and locate their referent.
 
-The following is an example of a Hub Key that identifies an asset and
+The following is an example of a Hub Key that identifies an asset,
 the hub and repository to which it was onboarded:
 
-`https://copyrighthub.org/s1/hub1/dcbfd5956ccde508f7a942eb7e03bd13/asset/c46421146c5a4aa68877afe37a75835c`
+`https://openpermissions.org/s1/hub1/dcbfd5956ccde508f7a942eb7e03bd13/asset/c46421146c5a4aa68877afe37a75835c`
 
 For details see the
 [Hub Key Technical Specification V1](
@@ -116,7 +116,7 @@ Offers are terms under which a licensor is willing to make an asset
 available to would-be users. Offers are identified by Hub Keys. For
 example:
 
-`https://copyrighthub.org/s1/chf/1451451435345/offer/2523452354315`
+`https://openpermissions.org/s1/chf/1451451435345/offer/2523452354315`
 
 Offers are linked to an asset when the asset is onboarded by supplying
 `offer_id` data, or can be merged in at any time afterwards.
@@ -159,7 +159,7 @@ For details see
 
 You should also request that platform admins register a **source ID
 type** for your organisation or service, contact
-[support-copyrighthub@digicatapult.org.uk](mailto:support-copyrighthub@digicatapult.org.uk).
+[support@openpermissions.org](mailto:support@openpermissions.org).
 
 >Note: To test the Onboarding Service you can use `examplecopictureid`
 >as the source ID type until custom asset ID types are assigned, and
@@ -308,8 +308,8 @@ print r.text
 Executing the above code should produce the following result:
 
 ```
-{"status": 200, "data": [{"entity_id": "001eea2323ff4bbea7dbdf285397e06b", "source_ids": [{"source_id": "DSC_00A987", "source_id_type": "examplecopictureid"}], "hub_key": "https://copyrighthub.org/s1/hub1/dcbfd5956ccde508f7a942eb7e03bd13/asset/001eea2323ff4bbea7dbdf285397e06b", "entity_type": "asset"}]}
-{"status": 200, "data": [{"entity_id": "ada1b1d052e24b1cb32c864fdc1c1204", "source_ids": [{"source_id": "DSC_00A987", "source_id_type": "examplecopictureid"}], "hub_key": "https://copyrighthub.org/s1/hub1/dcbfd5956ccde508f7a942eb7e03bd13/asset/ada1b1d052e24b1cb32c864fdc1c1204", "entity_type": "asset"}]}
+{"status": 200, "data": [{"entity_id": "001eea2323ff4bbea7dbdf285397e06b", "source_ids": [{"source_id": "DSC_00A987", "source_id_type": "examplecopictureid"}], "hub_key": "https://openpermissions.org/s1/hub1/dcbfd5956ccde508f7a942eb7e03bd13/asset/001eea2323ff4bbea7dbdf285397e06b", "entity_type": "asset"}]}
+{"status": 200, "data": [{"entity_id": "ada1b1d052e24b1cb32c864fdc1c1204", "source_ids": [{"source_id": "DSC_00A987", "source_id_type": "examplecopictureid"}], "hub_key": "https://openpermissions.org/s1/hub1/dcbfd5956ccde508f7a942eb7e03bd13/asset/ada1b1d052e24b1cb32c864fdc1c1204", "entity_type": "asset"}]}
 ```
 
 ##### Errors

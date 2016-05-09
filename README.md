@@ -2,7 +2,7 @@ The Open Permissions Platform Onboarding Service
 ================================================
 
 This repository contains an On-Boarding application which allows you to
-on-board ("upload") pictures to the Open Permissions Platform  and generate Hub ID for each
+on-board ("upload") assets to the Open Permissions Platform and generate a Hub Key for each
 uploaded asset.
 
 Running locally
