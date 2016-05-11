@@ -11,7 +11,7 @@
 + [Offer IDs](#offer-ids)
 + [Batch onboarding](#batch-onboarding)
 + [The Onboarding Service REST API](#the-onboarding-service-rest-api)
-+ [Python onboarding example](#onboarding-examples)
++ [Python onboarding example](#python-onboarding-example)
 + [Embedding Hub Keys in an image](#embedding-hub-keys-in-an-image)
 + [Onboarding edge cases](#onboarding-edge-cases)
 + [Example user story](#example-user-story)
@@ -377,7 +377,7 @@ Key into the image metadata. If so, the Hub Key should be added as the
 Copyright field in the IPTC record for the image.
 
 For more about IPTC see
-http://www.iptc.org/cms/site/index.html?channel=CH0099. Open source
+[IPTC Photo Metadata Standard](http://www.iptc.org/cms/site/index.html?channel=CH0099). Open source
 image metadata manipulation libraries and tools are available from
 [Exiv2](http://www.exiv2.org).
 
@@ -417,3 +417,6 @@ this:
 
 1. Judy accepts a pay-for-use offer, pays the fee via the Acme cart, and
    downloads and uses the image
+
+<!-- Copyright Notice -->
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
