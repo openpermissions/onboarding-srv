@@ -1,12 +1,21 @@
 The Open Permissions Platform Onboarding Service
 ================================================
 
+Useful Links
+============
+* [Open Permissions Platform](http://openpermissions.org)
+* [Low level Design](https://github.com/openpermissions/onboarding-srv/blob/master/documents/markdown/low-level-design.md)
+* [API Documentation](https://github.com/openpermissions/onboarding-srv/blob/master/documents/apiary/api.md)
+* [How to use the Onboarding Service](https://github.com/openpermissions/onboarding-srv/blob/master/documents/markdown/how-to-onboard.md)
+
+Service Overview
+================
 This repository contains an On-Boarding application which allows you to
 on-board ("upload") assets to the Open Permissions Platform and generate a Hub Key for each
 uploaded asset.
 
 Running locally
-===============
+---------------
 To run the service locally:
 
 ```
@@ -28,7 +37,7 @@ python onboarding/ -t [--test]
 ```
 
 Running tests and generating code coverage
-==========================================
+------------------------------------------
 To have a "clean" target from build artifacts:
 
 ```
