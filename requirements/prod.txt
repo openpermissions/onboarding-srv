@@ -8,7 +8,7 @@ click==3.3
 futures==2.2.0
 opp-bass==1.0.9
 opp-chub==1.0.6
-opp-koi==1.0.9
+opp-koi==1.0.10
 requests==2.4.3
 singledispatch==3.4.0.3
 six==1.10.0
