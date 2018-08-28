@@ -57,6 +57,36 @@ class AssetHandler(base.CorsHandler, base.JsonHandler):
             raise exceptions.HTTPError(
                 http_status,
                 {'errors': errors, 'data': data})
+    
+    @coroutine
+    def delete(self, repository_id):
+        """
+        Respond with JSON containing audit of assets deleted
+
+        :param repository_id: str
+        """
+        token = yield self.get_token(repository_id)
+
+        self.verify_content_type()
+        self.verify_body_size()
+
+        repository = yield get_repository(repository_id)
+        repository_url = repository['service']['location']
+
+        data, http_status, errors = yield assets.delete(
+            self.request.body,
+            self.request.headers.get('Content-Type', None),
+            repository_url,
+            repository_id,
+            token=token,
+            r2rml_url=self.get_argument("r2rml_url", None))
+
+        if not errors:
+            self.finish({'status': 200, 'data': data})
+        else:
+            raise exceptions.HTTPError(
+                http_status,
+                {'errors': errors, 'data': data})
 
     @coroutine
     def get_token(self, repository_id):
