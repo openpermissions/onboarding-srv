@@ -230,7 +230,7 @@ def delete(response_trans, repository_url, repository_id, token=None):
     try:
         rdf_n3 = response_trans['data']['rdf_n3']
         endpoint.prepare_request(
-            request_timeout=180, headers=headers, body=rdf_n3)
+            request_timeout=180, headers=headers, body=rdf_n3, allow_nonstandard_methods=True)
         yield endpoint.delete()
     except httpclient.HTTPError as exc:
         logging.debug('Repository service error code:{}'.format(exc.code))
