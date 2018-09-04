@@ -205,3 +205,48 @@ def store(response_trans, repository_url, repository_id, token=None):
         errors = [{"message": message}]
     logging.debug('<<< transform')
     raise Return((http_status, errors))
+
+@coroutine
+def delete(response_trans, repository_url, repository_id, token=None):
+    """
+    Send the rdf N3 content to the repository service for it to be deleted
+    :param response_trans: transformed data from the transformation service
+    :param repository_url: url of the repository service
+    :param repository_id: the repository ID
+    :param token: an authorization token
+    :return: Errors
+    """
+    http_status = 200
+    errors = []
+
+    headers = {
+        'Content-Type': 'text/rdf+n3',
+        'Accept': 'application/json'
+    }
+
+    client = API(repository_url, ssl_options=ssl_server_options(), token=token)
+    endpoint = client.repository.repositories[repository_id].assets
+
+    try:
+        rdf_n3 = response_trans['data']['rdf_n3']
+        endpoint.prepare_request(
+            request_timeout=180, headers=headers, body=rdf_n3, allow_nonstandard_methods=True)
+        yield endpoint.delete()
+    except httpclient.HTTPError as exc:
+        logging.debug('Repository service error code:{}'.format(exc.code))
+        logging.debug('Repository service error body:{}'.format(exc.response))
+        if exc.code in (400, 403):
+            http_status = exc.code
+            errors = json.loads(exc.response.body)['errors']
+        else:
+            http_status = 500
+            errors = [
+                {"message": "Repository service error {}".format(exc.code)}]
+    # socket error can occur if repository_url doesn't resolve to anything
+    # by the dns server
+    except socket.error as exc:
+        http_status = 500
+        message = "Socket error {} from {}".format(exc.args, repository_url)
+        errors = [{"message": message}]
+    logging.debug('<<< transform')
+    raise Return((http_status, errors))

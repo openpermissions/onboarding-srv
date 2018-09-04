@@ -16,7 +16,7 @@ import logging
 import re
 from tornado.options import options
 from tornado.gen import coroutine, Return
-from remote import transform, store
+import remote
 from bass.hubkey import generate_hub_key
 
 ASSET_ID = re.compile(r'http://openpermissions.org/ns/id/[0-9a-f]{32}')
@@ -36,7 +36,7 @@ def onboard(data, content_type, repository_url, repository_id, token=None, r2rml
     """
     assets = None
 
-    response_trans, http_status, errors = yield transform(data, content_type, r2rml_url)
+    response_trans, http_status, errors = yield remote.transform(data, content_type, r2rml_url)
 
     if 'id_map' not in response_trans['data']:
         response_trans['data']['id_map'] = generate_idmap(
@@ -44,10 +44,41 @@ def onboard(data, content_type, repository_url, repository_id, token=None, r2rml
 
     logging.debug(response_trans)
     if not errors and http_status == 200:
-        http_status, errors = yield store(response_trans, repository_url,
+        http_status, errors = yield remote.store(response_trans, repository_url,
                                           repository_id, token=token)
         assets = response_trans['data']['id_map']
     logging.debug('<<< onboard')
+    raise Return((assets, http_status, errors))
+
+@coroutine
+def delete(data, content_type, repository_url, repository_id, token=None, r2rml_url=None):
+    """
+    Transforms source data into RDF triples to be deleted from the repo
+    :param data: the source data
+    :param content_type: the http request content type
+    :param repository_url: url of the repository service
+    :param repository_id: the repository ID
+    :param token: an authorization token
+    :param r2rml_url: karma mapping file url (used by transformation)
+    :return: list of on boarded assets and errors
+    """
+    assets = None
+
+    response_trans, http_status, errors = yield remote.transform(data, content_type, r2rml_url)
+
+    if 'id_map' not in response_trans['data']:
+        response_trans['data']['id_map'] = generate_idmap(
+            response_trans, repository_id)
+
+    logging.debug(response_trans)
+    if not errors and http_status == 200:
+        http_status, errors = yield remote.delete(response_trans, repository_url,
+                                          repository_id, token=token)
+        assets = response_trans['data']['id_map']
+        assets[0].pop('entity_id', None)
+        assets[0].pop('hub_key', None)
+                
+    logging.debug('<<< DELETE')
     raise Return((assets, http_status, errors))
 
 
