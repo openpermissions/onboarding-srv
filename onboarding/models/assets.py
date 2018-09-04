@@ -75,6 +75,9 @@ def delete(data, content_type, repository_url, repository_id, token=None, r2rml_
         http_status, errors = yield remote.delete(response_trans, repository_url,
                                           repository_id, token=token)
         assets = response_trans['data']['id_map']
+        assets[0].pop('entity_id', None)
+        assets[0].pop('hub_key', None)
+                
     logging.debug('<<< DELETE')
     raise Return((assets, http_status, errors))
 
