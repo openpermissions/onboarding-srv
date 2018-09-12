@@ -327,3 +327,9 @@ Errors will only be returned in response if errors were raised during onboarding
                     }
                 ]
             }
+           
+
+#### Updates
+If an asset is submitted more than once with the same source_id and source_id_type combinations, then the asset will be updated and no duplicate asset will be created. 
+However, bear in mind the **the resulting hub key from an update will be different for every update.**
+
